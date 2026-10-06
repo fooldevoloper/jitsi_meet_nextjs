@@ -34,7 +34,7 @@ export default function MeetingRoom({
   const containerRef = useRef<HTMLDivElement>(null);
   const isLeavingRef = useRef(false);
 
-  const domain = process.env.NEXT_PUBLIC_JITSI_DOMAIN || 'meet.balkrishnapokharel.com.np';
+  const domain = process.env.NEXT_PUBLIC_JITSI_DOMAIN || 'meet.jit.si';
 
   const handleLeave = useCallback(() => {
     if (isLeavingRef.current) return;

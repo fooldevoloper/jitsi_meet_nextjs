@@ -131,7 +131,7 @@ export async function verifyAdminPassword(password: string): Promise<boolean> {
   const adminHash =
     process.env.NEXT_PUBLIC_ADMIN_PASSWORD_HASH ||
     // Default fallback hash for 'admin-secret-passphrase'
-    '0937b275bfb7eb00c85b5d19a27e7bebeafba6d3e8958b431766a5e173e6cf1e';
+    '93d3c9afc0f1e90e34eb37a21d36b0a37fc9fb558348a5d62cd0cfb92ce1867b';
 
   const hash = await sha256Hex(password.trim());
   return hash.toLowerCase() === adminHash.trim().toLowerCase();
